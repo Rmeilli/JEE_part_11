@@ -23,7 +23,7 @@ public class pres2 {
        IMetier metier=(IMetier) cMetier.newInstance();
        Method method=cMetier.getMethod("setDao",IDao.class);
        method.invoke(metier,dao);
-       System.out.println("resultat==>" +metier.calcul());
+       System.out.println("le resultat==>" +metier.calcul());
 
    }
 }
